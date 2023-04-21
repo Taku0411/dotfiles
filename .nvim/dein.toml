@@ -27,3 +27,7 @@ hool_add='''
 set signcolumn=yes
 set updatetime=100
 '''
+
+# debugger
+[[plugins]]
+repo = 'mfussenegger/nvim-dap'

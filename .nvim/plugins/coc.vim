@@ -9,7 +9,7 @@ highlight CocErrorSign ctermfg=15 ctermbg=196
 highlight CocWarningSign ctermfg=0 ctermbg=172
 
 "スペースinfoでHover
-noremap <silent> <Leader>in :<C-u>call CocAction('doHover')<cr>
+noremap <silent> <Leader>info :<C-u>call CocAction('doHover')<cr>
 "スペースdfでDefinition
 nnoremap <silent> <Leader>df :call CocAction('jumpDefinition')<CR>
 "スペースfmtでFormat

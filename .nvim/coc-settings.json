@@ -18,7 +18,7 @@
 					"enable": true,
 					"startupMessage": false,
 					"filetypes": ["py"],
-					"executable.command": "~/.pyenv/versions/3.10.0/bin/jedi-language-server" 
+					"executable.command": "/Users/sugiuratakumi/.pyenv/versions/3.10.0/bin/jedi-language-server" 
 				},
         "haskell": {
             "command": "hie-wrapper",
