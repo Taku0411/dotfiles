@@ -31,3 +31,10 @@ set updatetime=100
 # debugger
 [[plugins]]
 repo = 'mfussenegger/nvim-dap'
+
+# vin airlines
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
