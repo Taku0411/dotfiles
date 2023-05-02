@@ -29,3 +29,4 @@ cmake --build build --parallel 6
 cmake --install build --prefix ~/.local
 cd ../
 rm -rf VTK-9.1.0
+export PATH="$HOME/.local/lib/cmake/vtk-9.1/:$PATH"
