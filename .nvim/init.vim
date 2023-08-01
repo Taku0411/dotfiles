@@ -3,11 +3,14 @@ if &compatible
 endif
 
 " 外部設定ファイルの読み込み
-runtime! option.vim
+runtime! options.vim
 runtime! keymap.vim
 runtime! dein.vim
 runtime! myoption.vim
 
 " シンタックスハイライトをONにする
 syntax enable
-set relativenumber
+
+
+lua require("dap-global")
+lua require("dapui-global")

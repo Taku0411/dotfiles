@@ -1,7 +1,5 @@
 " ######################## 見た目 ########################
-set termguicolors " True Color対応
 set title " ターミナルのタブ名に現在編集中のファイル名を設定
-set number " 行番号を表示する
 set relativenumber " 行番号を今いる行から相対的に表示する(13ddとかするときに便利)
 set wrap " 右端まで表示される行を折り返して表示する
 set showmatch " 括弧入力時の対応する括弧を表示
@@ -38,11 +36,6 @@ set textwidth=0 "自動改行する文字数
 
 " ######################## ログ ########################
 set history=500 "保持するコマンド履歴の数
-set noswapfile " swapファイルを保存しない
-set noundofile " undoファイルを保存しない
-set nobackup " backupを保存しない
-set nowritebackup "writebackupを保存しない
-set viminfo= " viminfoファイルに保存しない
 
 " ######################## その他 ########################
 filetype plugin indent on " ファイルタイプの検索とプラグインをONにする

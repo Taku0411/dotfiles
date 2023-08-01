@@ -16,3 +16,5 @@ nnoremap <silent> <Leader>df :call CocAction('jumpDefinition')<CR>
 nnoremap <space>fmt :call CocAction('format')<CR>
 " Coc-quick-fix
 nnoremap <space>fx :call CocAction('doQuickfix')<CR>
+"スペース rnでRename
+"nnoremap <silent> <Leader>rn :call 
