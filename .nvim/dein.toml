@@ -14,8 +14,8 @@ source ~/.config/nvim/plugins/coc.vim
 # ファイルツリーを表示
 [[plugins]]
 repo = 'scrooloose/nerdtree'
-hook_add='''
-nnoremap <silent> <Leader>e :NERDTreeToggle<CR>
+hook_add = '''
+source ~/.config/nvim/plugins/nerdtree.vim
 '''
 
 # git差分表示
@@ -30,55 +30,30 @@ set updatetime=100
 [[plugins]]
 repo = 'mfussenegger/nvim-dap'
 depends = 'nvim-dap-ui'
-hook_source = '''
-lua << EOF
-EOF
-'''
 
 [[plugins]]
 repo = 'rcarriga/nvim-dap-ui'
 on_source = 'nvim-dap'
-hook_source = '''
-lua << EOF
-require("dapui").setup({
-  icons = { expanded = "∨", collapsed = ">" },
-  layouts = {
-    {
-      elements = {
-        { id = "watches", size = 0.20 },
-        { id = "stacks", size = 0.20 },
-        { id = "breakpoints", size = 0.20 },
-        { id = "scopes", size = 0.40 },
-      },
-      size = 64,
-      position = "right",
-    },
-    {
-      elements = {
-        "repl",
-        "console",
-      },
-      size = 0.20,
-      position = "bottom",
-    },
-  },
-})
-EOF
+hook_add = '''
+source ~/.config/nvim/plugins/nvim-dap-ui.vim
 '''
 
 # mason
 [[plugins]]
 repo = 'williamboman/mason.nvim'
 hook_add='''
-lua << EOF
-  require("mason").setup()
-EOF
+source ~/.config/nvim/plugins/mason.vim
 '''
 
-# vin airlines
+# jetbrains theme
+[[plugins]]
+repo = 'doums/darcula'
+hook_add = '''
+source ~/.config/nvim/plugins/darcula.vim
+'''
+
 [[plugins]]
 repo = 'vim-airline/vim-airline'
-
-[[plugins]]
-repo = 'vim-airline/vim-airline-themes'
-
+hook_add = '''
+let g:airline#extensions#tabline#enabled = 1
+'''

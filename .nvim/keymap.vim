@@ -3,8 +3,6 @@ let mapleader = "\<Space>"
 
 " 入力モード中に素早くjjと入力した場合はESCとみなす
 inoremap <silent> jj <Esc>:<C-u>w<CR>
-inoremap <silent> っj <Esc>:<C-u>w<CR>
-
 
 " ESCを2回押すことでハイライトを消す
 nmap <silent> <Esc><Esc> :nohlsearch<CR>
@@ -36,3 +34,15 @@ vnoremap k gk
 " tabキーと shift+tabキーで補完候補を選択できる
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
+
+"terminalモードからescで抜けられる
+tnoremap <Esc> <C-\><C-n> 
+
+" space + [
+nmap <Leader>[ <Plug>AirlineSelectPrevTab
+" space + ]
+nmap <Leader>] <Plug>AirlineSelectNextTab
+
+
+nmap <Right> :tabn<CR>
+nmap <Left> :tabN<CR>

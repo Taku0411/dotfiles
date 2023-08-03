@@ -17,6 +17,7 @@ set incsearch " 検索文字列入力時に順次対象文字列にヒットさ�
 set inccommand=split " インタラクティブに変更
 
 " ######################## インデント ########################
+set shiftwidth=2 "自動インデント
 set smartindent " オートインデント
 set expandtab " softtabstop や shiftwidth で設定されている値分のスペースが挿入されたときに、挿入されたスペース数が tabstop に達してもタブに変換されない
 set tabstop=2 " スペースn個分で1つのタブとしてカウントするか
@@ -39,4 +40,5 @@ set history=500 "保持するコマンド履歴の数
 
 " ######################## その他 ########################
 filetype plugin indent on " ファイルタイプの検索とプラグインをONにする
+set ttimeoutlen=10 "tmux使用時にescの入力遅延を防ぐ
 set encoding=utf-8 " 文字コードをutf-8にする
