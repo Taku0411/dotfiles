@@ -4,7 +4,7 @@ rm VTK-9.1.0.tar.gz
 cd VTK-9.1.0
 cmake -B build \
 -D CMAKE_INSTALL_PREFIX=~/.local/ \
--D CMAKE_BUILD_TYPE:STRING=“Release”\
+-D CMAKE_BUILD_TYPE:STRING=“Release” \
 -D VTK_WRAP_PYTHON:BOOL=OFF \
 -D VTK_GROUP_ENABLE_Imaging=NO \
 -D VTK_GROUP_ENABLE_MPI=NO \
