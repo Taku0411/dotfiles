@@ -9,6 +9,7 @@
             "filetypes": ["c", "cpp", "objc", "objcpp"],
 	          "clangd.fallbackFlags":["-std=c++17"]
         },
+        "coc-lists":{},
         "dockerfile": {
             "command": "docker-langserver",
             "filetypes": ["dockerfile"],

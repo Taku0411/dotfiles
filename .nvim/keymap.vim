@@ -46,3 +46,4 @@ nmap <Leader>] <Plug>AirlineSelectNextTab
 
 nmap <Right> :tabn<CR>
 nmap <Left> :tabN<CR>
+map <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
