@@ -22,8 +22,7 @@ source ~/.config/nvim/plugins/nerdtree.vim
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 hool_add='''
-set signcolumn=yes
-set updatetime=100
+source ~/.config/nvim/plugins/vim-gitgutter.vim
 '''
 
 # debugger
