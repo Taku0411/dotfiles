@@ -17,5 +17,8 @@ nnoremap <space>fmt :call CocAction('format')<CR>
 " Coc-quick-fix
 nnoremap <space>fx :call CocAction('doQuickfix')<CR>
 "スペース rnでRename
-"nnoremap <silent> <Leader>rn :call 
-"
+nmap <space>rn <Plug>(coc-rename)
+"スペース enで次のエラーへ移動
+nnoremap <space>en :call CocAction('diagnosticNext')<CR>
+"スペース epで前のエラーへ移動
+nnoremap <space>ep :call CocAction('diagnosticPrevious')<CR>
