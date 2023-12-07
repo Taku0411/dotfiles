@@ -1,7 +1,8 @@
 " デフォルトでインストールするもの
 let g:coc_global_extensions = [
     \'coc-clangd',
-    \'coc-pyright'
+    \'coc-pyright',
+    \'coc-lists',
     \]
 
 " エラーと警告の色を指定
