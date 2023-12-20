@@ -56,3 +56,10 @@ repo = 'vim-airline/vim-airline'
 hook_add = '''
 let g:airline#extensions#tabline#enabled = 1
 '''
+
+# markdown preview
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+hook_add = '''
+source ~/.config/nvim/plugins/markdown-preview.vim
+'''

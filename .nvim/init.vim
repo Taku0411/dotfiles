@@ -6,6 +6,7 @@ endif
 runtime! dein.vim
 runtime! options.vim
 runtime! keymap.vim
+runtime! gnuplot.vim
 
 " シンタックスハイライトをONにする
 syntax enable
