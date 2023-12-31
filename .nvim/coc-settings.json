@@ -1,7 +1,6 @@
 {
     "suggest.noselect": true,
     "suggest.preferCompleteThanJumpPlaceholder": true,
-    "coc.preferences.formatOnSaveFiletypes": [ "cpp" ],
     "languageserver": {
         "coc-lists":{
         },

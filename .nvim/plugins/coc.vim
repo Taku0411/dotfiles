@@ -3,6 +3,8 @@ let g:coc_global_extensions = [
     \'coc-clangd',
     \'coc-pyright',
     \'coc-lists',
+    \'coc-toml',
+    \'coc-cmake'
     \]
 
 " エラーと警告の色を指定
