@@ -10,7 +10,7 @@ highlight CocErrorSign ctermfg=15 ctermbg=196
 highlight CocWarningSign ctermfg=0 ctermbg=172
 
 "スペースinfoでHover
-noremap <silent> <space>info :<C-u>call CocAction('doHover')<cr>
+noremap <silent> <space>info :<C-u>call CocAction('doHover')<CR>
 "スペースdfでDefinition
 nnoremap <silent> <space>df :call CocAction('jumpDefinition')<CR>
 "スペースfmtでFormat
@@ -23,3 +23,5 @@ nmap <space>rn <Plug>(coc-rename)
 nnoremap <space>en :call CocAction('diagnosticNext')<CR>
 "スペース epで前のエラーへ移動
 nnoremap <space>ep :call CocAction('diagnosticPrevious')<CR>
+"スペース hiでヘッダーと実装を移動
+nnoremap <silent> <space>hi :CocCommand clangd.switchSourceHeader<CR>
