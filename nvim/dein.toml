@@ -5,7 +5,6 @@ repo = 'Shougo/dein.vim'
 # coc
 [[plugins]]
 repo = 'neoclide/coc.nvim'
-merged = 0
 rev = 'release'
 hook_add = '''
 source ~/.config/nvim/plugins/coc.vim
@@ -21,7 +20,7 @@ source ~/.config/nvim/plugins/nerdtree.vim
 # git差分表示
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
-hool_add='''
+hook_add='''
 source ~/.config/nvim/plugins/vim-gitgutter.vim
 '''
 
