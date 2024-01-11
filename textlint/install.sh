@@ -7,4 +7,5 @@ npm install textlint-plugin-latex2e
 BASEDIR=$(dirname $0)
 cd $BASEDIR
 go install github.com/mattn/efm-langserver@latest
+mkdir ~/.config/efm-langserver
 ln -s ${PWD}/config.yaml ~/.config/efm-langserver/config.yaml
