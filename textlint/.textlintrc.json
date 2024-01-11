@@ -1,0 +1,22 @@
+{
+  "filters": {},
+  "rules": {
+    "preset-ja-spacing": true,
+    "preset-ja-technical-writing": {
+      "ja-no-mixed-period": {
+        "periodMark": "．"
+      },
+      "ja-space-between-half-and-full-width": {
+        "space": "always",
+        "exceptPunctuation": true,
+      },
+      "max-ten": {
+        "touten": "，",
+        "kuten": "．"
+      }
+    },
+  },
+  "plugins": [
+    "latex2e"
+  ]
+}

@@ -62,3 +62,7 @@ repo = 'iamcco/markdown-preview.nvim'
 hook_add = '''
 source ~/.config/nvim/plugins/markdown-preview.vim
 '''
+
+# vim for latex
+[[plugins]]
+repo = 'lervag/vimtex'
