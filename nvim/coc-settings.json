@@ -23,6 +23,6 @@
     "clangd": {
       "enabled": true,
       "arguments": ["--background-index", "--clang-tidy", "-j=4", "--log", "verbose"],
-      "fallbackfallbackFlags": ["-std=c++17", "-Wall", "-Wextra"]
+      "fallbackFlags": ["-std=c++17", "-Wall", "-Wextra"]
     }
 }
