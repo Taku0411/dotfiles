@@ -6,4 +6,4 @@ BASEDIR=$(dirname $0)
 cd $BASEDIR
 
 #install neovim
-ln -s ${PWD}/.nvim ~/.config/nvim
+ln -s ${PWD}/nvim ~/.config/nvim
