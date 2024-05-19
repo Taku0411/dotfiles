@@ -63,9 +63,6 @@ hook_add = '''
 source ~/.config/nvim/plugins/markdown-preview.vim
 '''
 
-# vim for latex
+# nvim-nio
 [[plugins]]
-repo = 'lervag/vimtex'
-hook_add = '''
-source ~/.config/nvim/plugins/vimtex.vim
-'''
+repo = 'nvim-neotest/nvim-nio'
