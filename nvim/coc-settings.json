@@ -1,28 +1,25 @@
 {
     "suggest.noselect": true,
     "suggest.preferCompleteThanJumpPlaceholder": true,
-    "languageserver": {
-        "dockerfile": {
-            "command": "docker-langserver",
-            "filetypes": ["dockerfile"],
-            "args": ["--stdio"]
-        },
-        "efm": {
-            "command": "efm-langserver",
-            "args": [],
-            "filetypes": ["vim", "eruby", "markdown", "yaml", "latex"]
-        },
-        "jedi": {
-            "enable": true,
-            "startupMessage": false,
-            "filetypes": ["py"],
-            "executable.command": "/Users/sugiuratakumi/.pyenv/versions/3.10.0/bin/jedi-language-server" 
-        }
-    },
-    "python.jediEnabled": false,
     "clangd": {
-      "enabled": true,
-      "arguments": ["--background-index", "--clang-tidy", "-j=4", "--log", "verbose"],
-      "fallbackFlags": ["-std=c++17", "-Wall", "-Wextra"]
-    }
+        "enabled": true,
+        "arguments": [
+            "--background-index",
+            "--clang-tidy",
+            "-j=4",
+            "--log",
+            "verbose"
+        ],
+        "rootPatterns": [
+            "compile_commands.json",
+            "build/"
+        ],
+        "fallbackFlags": [
+            "/std=c++latest",
+            "-std=c++23",
+            "-Wall",
+            "-Wextra"
+        ]
+    },
+    "clangd.path": "~\\.config\\coc\\extensions\\coc-clangd-data\\install\\19.1.2\\clangd_19.1.2\\bin\\clangd.exe"
 }

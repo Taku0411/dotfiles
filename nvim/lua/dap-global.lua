@@ -4,13 +4,14 @@ dap.adapters.codelldb = {
   type = 'server',
   port = '${port}', -- 適切なポート番号を設定してください
   executable = {
-    command = vim.loop.os_homedir() .. '/.local/share/nvim/mason/packages/codelldb/codelldb',
+    command = vim.loop.os_homedir() .. '/AppData/Local/nvim-data/mason/bin/codelldb.cmd',
     args = {'--port', '${port}'}, -- 適切なポート番号を設定してください
   }
 }
 
 -- 1. dap-config.lua ファイルが存在する場合はそれを読み込む
-local has_dap_config, dap_config = pcall(require, "dap-config")
+local dap_config_path = vim.fn.getcwd() .. "/dap-config.lua"
+
 -- 2. デフォルトの設定を登録する関数
 local function setup_default_configurations()
   local dap = require("dap")
@@ -28,15 +29,13 @@ local function setup_default_configurations()
 end
 -- デフォルト設定終わり
 
--- 3. dap-config.lua ファイルが存在しない場合はデフォルトの設定を登録する
-if not has_dap_config then
-  setup_default_configurations()
-  print("default configurations are loaded")
-end
-
---4. 4. dap-config.lua ファイルが存在する場合はその内容を読み込む
-if has_dap_config then
+-- 3  dap-config.lua ファイルが存在する場合はその内容を読み込む
+if vim.fn.filereadable(dap_config_path) == 1 then
   dofile(vim.fn.getcwd() .. "/dap-config.lua")
-  print("local configurations file is loaded")
+  vim.notify("local configurations file is loaded")
+-- 4. dap-config.lua ファイルが存在しない場合はデフォルトの設定を登録する
+else
+  setup_default_configurations()
+  vim.notify("default configurations are loaded")
 end
 

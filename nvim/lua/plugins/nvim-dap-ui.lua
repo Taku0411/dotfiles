@@ -1,4 +1,3 @@
-lua << EOF
 require("dapui").setup({
   icons = { expanded = "∨", collapsed = ">" },
   layouts = {
@@ -22,4 +21,3 @@ require("dapui").setup({
     },
   },
 })
-EOF
