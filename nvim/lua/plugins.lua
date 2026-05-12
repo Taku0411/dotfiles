@@ -2,7 +2,7 @@ return {
   -- coc.vim
   {
     "neoclide/coc.nvim",
-    branch = "release",
+    commit = "0568d11f5cb0e38aa18f28621feacbe5af473076",
     config = function()
       require("plugins.coc")
     end,
@@ -63,33 +63,5 @@ return {
     config = function()
       vim.g["airline#extensions#tabline#enabled"] = 1
     end,
-  },
-
-  -- codecompanion
-  {
-    "olimorris/codecompanion.nvim",
-    opts = {
-      strategies = {
-        chat = {
-          adapter = "gpt",
-          inline = "gpt",
-        }
-      },
-      adapters = {
-        gpt = function()
-          return require("codecompanion.adapters").extend("ollama", {
-            name = "gpt",
-            schema = {
-              model = {
-                default = "gpt-oss:20b",
-              },
-            },
-          })
-        end,
-      },
-    },
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
   },
 }

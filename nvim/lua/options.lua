@@ -34,7 +34,7 @@ opt.softtabstop = 2 -- <tab>を押したとき、n個のスペースを挿入
 opt.shiftwidth = 2 -- <Enter>や<<, >>などを押したとき、n個のスペースを挿入
 
 -- ######################## 補完 ########################
-opt.wildmode= { "list", "longest"} -- コマンドラインの補完
+opt.wildmode= {"longest:full", "full"} -- コマンドラインの補完
 opt.infercase = true -- 補完時に大文字小文字を区別しない
 opt.wildmenu = true --コマンドの補完を有効に
 
